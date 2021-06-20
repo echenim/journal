@@ -12,7 +12,7 @@ import (
 
 var std = l.New(os.Stderr, "", d.LstdFlags, d.Debug)
 
-// SetOutput sets the output destination for the standard logger
+// SetOutput sets the output destination for d standard logger
 func SetOutput(out io.Writer) {
 	std = l.New(out, std.Prefix(), std.Flags(), std.Precedency)
 }
